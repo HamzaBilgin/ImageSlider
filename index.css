@@ -1,0 +1,90 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.dNone{
+    display: none;
+}
+.imgSlader ul{
+    list-style: 0;
+}
+.imgSlader ul li{
+    display: none;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.imgSlader ul li.active {
+    display: flex;
+  }
+.imgSlader img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgSlader ul li div{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    background-color: white;
+    bottom: 10%;
+    right: 10%;
+    padding: 20px;
+}
+
+.imgSlader ul li div>p:nth-child(1){
+   font-size: 25px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.imgSlader ul li div>p:nth-child(2)::first-letter{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgSlader .imgSlader__button{
+    position: absolute;
+    z-index: 2;   
+    background-color: rgb(255, 255, 255 , 0.5);
+    cursor: pointer;
+    border-radius: 50%;  
+}
+.imgSlader .imgSlader__button:hover{
+    background-color: rgb(255, 255, 255 , 1);
+}
+.imgSlader .imgSlader__button button {
+    border: none;
+    background-color: unset;
+    scale: 2;
+    cursor: pointer;
+    padding: 22px;
+
+}
+.imgSlader .imgSlader__button--previous {
+    top: 30%;
+    left: 4%;
+}
+.imgSlader .imgSlader__button--next {
+    top: 30%;
+    right: 4%;
+}
